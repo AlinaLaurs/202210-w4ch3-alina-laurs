@@ -10,7 +10,7 @@ export function Card({ character }: { character: ICharacter }) {
                 />
                 <div className="card-body">
                     <h2 className="character__name card-title h4">
-                        {character.name} console.log(character.name)
+                        {character.name}
                     </h2>
                     <div className="character__info">
                         <ul className="list-unstyled">
