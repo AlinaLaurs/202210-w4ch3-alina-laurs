@@ -1,4 +1,5 @@
-export function Card({ character }: { character: any }) {
+import { ICharacter } from "../data/character";
+export function Card({ character }: { character: ICharacter }) {
     return (
         <li className="character col">
             <div className="card character__card">
@@ -9,7 +10,7 @@ export function Card({ character }: { character: any }) {
                 />
                 <div className="card-body">
                     <h2 className="character__name card-title h4">
-                        {character.name}
+                        {character.name} console.log(character.name)
                     </h2>
                     <div className="character__info">
                         <ul className="list-unstyled">

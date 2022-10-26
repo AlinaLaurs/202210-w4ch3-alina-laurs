@@ -4,8 +4,8 @@ import { Card } from "./card";
 export function List() {
     return (
         <ul className="characters-list">
-            {characters.map((item) => (
-                <Card character={item}></Card>
+            {characters.map((item, index) => (
+                <Card character={item} key={index}></Card>
             ))}
         </ul>
     );
