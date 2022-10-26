@@ -11,10 +11,5 @@ describe("Given Card component", () => {
             const element = screen.getByText(/Daenerys/i);
             expect(element).toBeInTheDocument();
         });
-        test("Then it should display today data", () => {
-            const expectedDate = new Date().toLocaleString();
-            const element = screen.getByText(expectedDate);
-            expect(element).toBeInTheDocument();
-        });
     });
 });

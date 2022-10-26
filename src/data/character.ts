@@ -23,21 +23,21 @@ export interface IMethodsCharacter {
 }
 
 export class Character implements ICharacter, IMethodsCharacter {
-    //name: string;
-    //family: string;
-    //age: number;
+    name: string;
+    family: string;
+    age: number;
 
-    lifeStatus: boolean;
+    isAlive: boolean;
     message: string;
 
-    static show = 'GoT';
+    static show = "GoT";
     constructor(name: string, family: string, age: number) {
         this.name = name;
         this.family = family;
         this.age = age;
 
-        this.lifeStatus = true;
-        this.message = '';
+        this.isAlive = true;
+        this.message = "";
     }
 
     communicate() {
@@ -45,6 +45,6 @@ export class Character implements ICharacter, IMethodsCharacter {
     }
 
     death() {
-        this.lifeStatus = false;
+        this.isAlive = false;
     }
 }
