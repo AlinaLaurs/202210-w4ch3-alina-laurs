@@ -28,7 +28,10 @@
             "react-app",
             "react-app/jest",
             "prettier"
-        ]
+        ],
+        "rules": {
+            "testing-libbrary/no-render-in-setup": "off"
+        }
     },
     "browserslist": {
         "production": [
